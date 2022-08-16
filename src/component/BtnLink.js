@@ -6,4 +6,6 @@ function BtnLink({LinkText, LinkClass, LinkPath}) {
   )
 }
 
+
+
 export default BtnLink

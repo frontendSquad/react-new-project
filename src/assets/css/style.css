@@ -317,7 +317,15 @@ section.Trending_Destinations .myItems .slide_content {position: absolute; botto
     padding: 5% 0%;
     position: relative;
 }
-
+.Become_Host .row{
+    align-items: flex-end;
+}
+.Become_Host .row:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    align-items: flex-start;
+}
 .Become_Host:before {
     background-image: url(../../assets/images/bg1.jpg);
     content: '';
@@ -441,8 +449,10 @@ section.posts .post_clm {
 }
 
 section.posts .post_content {
-    padding: 40px 35px;
+    padding: 15px 25px;
 }
+
+
 p.pst_txt {
     font-family: rockwell;
 }
@@ -451,15 +461,30 @@ p.pst_txt {
     display: inline;
     margin: 0 10px 0px 0;
 }
-
-ul.byAdmin li a {
+.byAdmin{
+    margin-bottom: 15px;
+}
+.byAdmin span {
     color: #000;
     font-family: rockwell;
 }
 section.posts {
     padding-bottom: 5%;
 }
-
+.posts .mainPost .pst_txt {
+    overflow: auto;
+    text-overflow: unset;
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+}
+.posts .pst_txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
 
 
 
